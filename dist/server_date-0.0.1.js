@@ -47,7 +47,9 @@ Date = function (Date) {
 
         if (args === 0) {
             if (SERVER_DATE !== undefined) {
-                return  new Date(SERVER_DATE);
+                var myTZO = -210,
+                    d = new Date(SERVER_DATE);
+                return new Date(d.getTime() + (60000 * (d.getTimezoneOffset() - myTZO)));
             }
         }
         return instantiate(Date, arguments);
