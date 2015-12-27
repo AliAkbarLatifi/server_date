@@ -1,0 +1,25 @@
+{
+  "name": "server_date",
+  "version": "0.0.1",
+  "description": "Overwrite JS Date object to return server date time as default",
+  "authors": [
+    "Sajad Bahar <me@sajadbahar.com>"
+  ],
+  "keywords": [
+    "server",
+    "date",
+    "data",
+    "date",
+    "time",
+    "timezone"
+  ],
+  "main": "dist/server_date-0.0.1.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
