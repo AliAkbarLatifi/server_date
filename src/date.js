@@ -11,9 +11,13 @@ Date = function (Date) {
     URL = scripts[scripts.length - 1].src,
     synchronizing = false,
     SERVER_DATE;
-
-    var bind = Function.bind;
-    var unbind = bind.bind(bind);
+	
+    try {
+    	var bind = Function.bind;
+    	var unbind = bind.bind(bind);
+    } catch(err) {
+    	return Date;
+    }
 
     function instantiate(constructor, args) {
         return new (unbind(constructor, null).apply(null, args));
